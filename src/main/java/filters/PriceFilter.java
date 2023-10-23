@@ -14,7 +14,7 @@ public class PriceFilter implements SearchFilter {
         if (minPrice > maxPrice) {
             this.maxPrice = minPrice;
             this.minPrice = maxPrice;
-        } else{
+        } else {
             this.maxPrice = maxPrice;
             this.minPrice = minPrice;
         }
