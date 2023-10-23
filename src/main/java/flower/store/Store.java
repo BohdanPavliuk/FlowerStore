@@ -11,7 +11,7 @@ public class Store {
     public List<Item> search(SearchFilter filter) {
         List<Item> found = new ArrayList<>();
         
-        for (Item item: items){
+        for (Item item: items) {
             if (filter.match(item)) {
                 found.add(item);
             }
