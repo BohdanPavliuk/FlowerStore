@@ -5,12 +5,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @AllArgsConstructor @NoArgsConstructor @Setter
-public class FlowerPack extends Item{
+public class FlowerPack extends Item {
     private Flower flower;
     private int quantity;
 
 
-    public double getPrice(){
+    public double getPrice() {
         return flower.getPrice() * quantity;
     }
 }

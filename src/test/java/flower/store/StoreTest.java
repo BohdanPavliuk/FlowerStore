@@ -49,7 +49,8 @@ public class StoreTest {
         newStore.addItem(bucket);
         newStore.addItem(rose);
         newStore.addItem(tulip);
-        List<Item> searchResult = store.search(new PriceFilter(MINPRICE, MAXPRICE));
+        PriceFilter newFilter = new PriceFilter(MINPRICE, MAXPRICE);
+        List<Item> searchResult = store.search(newFilter);
         Assertions.assertEquals(NEWLENGTH, searchResult.size());
         Assertions.assertEquals(bucket, searchResult.get(0));
     }

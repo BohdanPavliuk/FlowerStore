@@ -8,7 +8,7 @@ import lombok.Setter;
 
 
 @Setter @NoArgsConstructor @AllArgsConstructor
-public class Flower extends Item{
+public class Flower extends Item {
     @Getter
     private double sepalLength;
     private FlowerColor color;
@@ -18,7 +18,7 @@ public class Flower extends Item{
     private FlowerType flowerType;
 
 
-    public Flower(Flower flower){
+    public Flower(Flower flower) {
         this.color = flower.color;
         this.price = flower.price;
         this.sepalLength = flower.sepalLength;

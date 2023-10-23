@@ -8,22 +8,22 @@ import filters.SearchFilter;
 public class Store {
     private final List<Item> items = new ArrayList<>(); 
 
-    public List<Item> search(SearchFilter filter){
+    public List<Item> search(SearchFilter filter) {
         List<Item> found = new ArrayList<>();
         
         for (Item item: items){
-            if (filter.match(item)){
+            if (filter.match(item)) {
                 found.add(item);
             }
         }
         return found;
     }
 
-    public void addItem(Item item){
+    public void addItem(Item item) {
         this.items.add(item);
     }
 
-    public int getNumberOfItems(){
+    public int getNumberOfItems() {
         return this.items.size();
     }
 }
